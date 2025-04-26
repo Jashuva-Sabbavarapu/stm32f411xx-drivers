@@ -830,6 +830,6 @@ typedef struct
 #define ENABLE                                  1
 #define DISABLE                                 0
 #define HIGH                                    ENABLE
-#define LOW                                     DISABLEs
+#define LOW                                     DISABLE
 
 #endif // STM32F411XX_H

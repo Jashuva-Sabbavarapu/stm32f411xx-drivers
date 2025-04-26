@@ -5,7 +5,7 @@ CC=arm-none-eabi-gcc
 CONFIGDIR=config/
 
 #Source files directory
-SRC=src/
+SRC=app/
 
 #Build files directory
 BUILD=build/
@@ -17,7 +17,8 @@ DRIVERINC=drivers/inc/
 DRIVERSRC=drivers/src/
 
 #Bsp files directory
-BSPDIR=bsp/
+#Uncomment if you want to add bsp
+#BSPDIR=bsp/
 
 #Target Machine
 MACH=cortex-m4
