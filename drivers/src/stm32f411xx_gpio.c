@@ -393,25 +393,3 @@ void GPIO_IRQHandling(uint8_t pinNum)
 		EXTI->PR |= (1 << pinNum);
 	}
 }
-
-/*
-*	@fn 		:		clearTheElements
-*
-*	@brief		:		Function for clearing all the elements from the structure
-*
-*	@param[in]	:		pointer for pointing to the structure
-*
-*	@return		:		none
-*	
-*	@note 		:		none
-*/
-void clearTheElements(GPIO_Handle_t *ptr)
-{
-	ptr->GPIOx = 0;
-	ptr->PinConfig.pinNumber = 0;
-	ptr->PinConfig.pinMode = 0;
-	ptr->PinConfig.pinOtype = 0;
-	ptr->PinConfig.pinSpeed = 0;
-	ptr->PinConfig.pinPupd = 0;
-	ptr->PinConfig.pinAlf = 0;
-}
