@@ -83,7 +83,7 @@ void FPU_IRQHandler							        (void)__attribute__((weak, alias("Default_Hand
 void SPI4_IRQHandler						        (void)__attribute__((weak, alias("Default_Handler")));
 void SPI5_IRQHandler						        (void)__attribute__((weak, alias("Default_Handler")));
 
-uint32_t vectors[] __attribute__((section(".isr_vector"))) = 
+uint32_t vectors[]__attribute__((section(".isr_vector"))) = 
 {
 	STACK_START,
 	(uint32_t)&Reset_Handler,

@@ -18,14 +18,6 @@ typedef struct
 	
 }GPIO_PinConfig_t;
 
-typedef struct
-{
-	uint16_t portMode;
-	uint16_t portOtype;
-	uint16_t portSpeed;
-	uint16_t portPupd;
-}GPIO_PortConfig_t;
-
 /*
 *	GPIOx handling structure
 */
@@ -33,67 +25,39 @@ typedef struct
 {
 	GPIOx_t *GPIOx;
 	GPIO_PinConfig_t PinConfig;
-	GPIO_PortConfig_t PortConfig;
 }GPIO_Handle_t;
 
 /*
 *	Possible GPIO pin mode macros
 */
-#define GPIO_MODE_IN					      0
-#define GPIO_MODE_OUT					      1
-#define GPIO_MODE_ALF					      2
-#define GPIO_MODE_ANALOG				    3
-#define GPIO_MODE_IT_RT					    4
-#define GPIO_MODE_IT_FT					    5
-#define GPIO_MODE_IT_RFT				    6
-
-/*
-*	Possible GPIO port mode macros
-*/
-#define GPIO_POROT_MODE_IN				  0x00000000
-#define GPIO_PORT_MODE_OUT				  0x55555555
+#define GPIO_MODE_IN					      	0
+#define GPIO_MODE_OUT					      	1
+#define GPIO_MODE_ALF					      	2
+#define GPIO_MODE_ANALOG				    	3
+#define GPIO_MODE_IT_RT					    	4
+#define GPIO_MODE_IT_FT					    	5
+#define GPIO_MODE_IT_RFT				    	6
 
 /*
 *	Possible GPIO pin output type macros
 */
-#define GPIO_OUT_PP						      0
-#define GPIO_OUT_OD						      1
-
-/*
-*	Possible GPIO port output type macros
-*/
-#define GPIO_PORT_MODE_PP				    0x00000000
-#define GPIO_PORT_MODE_OD				    0x55555555
+#define GPIO_OUT_PP						      	0
+#define GPIO_OUT_OD						      	1
 
 /*
 *	Possible GPIO pin output speed macros
 */
-#define GPIO_SPEED_LOW					    0
-#define GPIO_SPEED_MEDIUM				    1
-#define GPIO_SPEED_FAST					    2
-#define GPIO_SPEED_HIGH					    3
-
-/*
-*	Possible GPIO port output speed macros
-*/
-#define GPIO_PORT_SPEED_LOW				  0x00000000
-#define GPIO_PORT_SPEED_MEDIUM			0x55555555
-#define GPIO_PORT_SPEED_FAST			  0xAAAAAAAA
-#define GPIO_PORT_SPEED_HIGH			  0xFFFFFFFF
+#define GPIO_SPEED_LOW					    	0
+#define GPIO_SPEED_MEDIUM				    	1
+#define GPIO_SPEED_FAST					    	2
+#define GPIO_SPEED_HIGH					    	3
 
 /*
 *	Possible GPIO pin Pull up and pull down resister macros
 */
-#define GPIO_NO_PUPD					      0
-#define GPIO_PIN_PUR					      1
-#define GPIO_PIN_PDR					      2
-
-/*
-*	Possible GPIO port Pull up and pull down resister macros
-*/
-#define GPIO_PORT_NO_PUPD				    0x00000000
-#define GPIO_PORT_PUR					      0x55555555
-#define GPIO_PORT_PDR					      0xAAAAAAAA
+#define GPIO_NO_PUPD					      	0
+#define GPIO_PIN_PUR					      	1
+#define GPIO_PIN_PDR					      	2
 
 /*
 *	Possible GPIO pin alternate function macros
@@ -118,22 +82,22 @@ typedef struct
 /*
 *	GPIO Pin numbers macros 
 */
-#define GPIO_PIN_0						      0
-#define GPIO_PIN_1  					      1
-#define GPIO_PIN_2 						      2
-#define GPIO_PIN_3  					      3
-#define GPIO_PIN_4  					      4
-#define GPIO_PIN_5   					      5
-#define GPIO_PIN_6  					      6
-#define GPIO_PIN_7   					      7
-#define GPIO_PIN_8   					      8
-#define GPIO_PIN_9   					      9
-#define GPIO_PIN_10   					    10
-#define GPIO_PIN_11						      11
-#define GPIO_PIN_12						      12
-#define GPIO_PIN_13						      13
-#define GPIO_PIN_14						      14
-#define GPIO_PIN_15						      15
+#define GPIO_PIN_0						      	0
+#define GPIO_PIN_1  					      	1
+#define GPIO_PIN_2 						      	2
+#define GPIO_PIN_3  					      	3
+#define GPIO_PIN_4  					      	4
+#define GPIO_PIN_5   					      	5
+#define GPIO_PIN_6  					      	6
+#define GPIO_PIN_7   					      	7
+#define GPIO_PIN_8   					      	8
+#define GPIO_PIN_9   					      	9
+#define GPIO_PIN_10   					      	10
+#define GPIO_PIN_11						      	11
+#define GPIO_PIN_12						      	12
+#define GPIO_PIN_13						      	13
+#define GPIO_PIN_14						      	14
+#define GPIO_PIN_15						      	15
 
 
 /*

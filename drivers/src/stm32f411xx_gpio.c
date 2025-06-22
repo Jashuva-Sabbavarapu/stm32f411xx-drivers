@@ -414,8 +414,4 @@ void clearTheElements(GPIO_Handle_t *ptr)
 	ptr->PinConfig.pinSpeed = 0;
 	ptr->PinConfig.pinPupd = 0;
 	ptr->PinConfig.pinAlf = 0;
-	ptr->PortConfig.portMode = 0;
-	ptr->PortConfig.portOtype = 0;
-	ptr->PortConfig.portSpeed = 0;
-	ptr->PortConfig.portPupd = 0;
 }
